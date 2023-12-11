@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: white;
+  height: 4rem;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 4rem;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: gray;
+  transition: color 0.3ms;
+}
+
+header #navbar .hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  header #navbar .hamburger-menu {
+    display: block;
+  }
+  header #navbar .nav-list {
+    display: none;
+  }
+}
+
+/* SECTION BANNER */
+
+main {
+  margin-top: 4rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+main #banner .banner-content .banner-content-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+main #banner .banner-content .banner-content-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1, 5rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+main #banner .banner-content .banner-content-btn {
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
+}
+
+main #banner .banner-image {
+  border-radius: 50%;
+  max-width: 250px;
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+
+/* SECTION POSTS */
+
+section#posts {
+  margin-top: 4rem;
+  background-color: yellowgreen;
+}
+
+#posts .posts-content {
+  max-width: 1080px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 1, 5rem;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-content-header .view-all-link {
+  text-decoration: none;
+  color: black;
+}
+
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content .posts-cards .post-card {
+  background-color: white;
+  padding: 24px;
+}
+
+#posts .posts-content .posts-cards .post-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content .posts-cards .post-card span {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 720px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}
