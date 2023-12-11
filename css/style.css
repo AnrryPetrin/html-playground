@@ -1,0 +1,62 @@
+/* Cascading Style Sheets */
+.title {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#main-styles {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px 100px;
+    border: 5px solid yellow;
+    border-radius: 10px;
+}
+
+#main-styles .paragraph {
+    color: yellow;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: monospace;
+}
+
+#flexbox .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexbox .container .box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#flexbox .container .box-2 {
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+section#grid-layout {
+    margin-top: 30px;
+}
+
+#grid-layout .container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    
+}
+
+#grid-layout .container-grid .box {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
