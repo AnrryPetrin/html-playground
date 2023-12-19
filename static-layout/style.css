@@ -1,0 +1,98 @@
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.rectangle {
+    border: solid black;
+    margin: 1rem;
+    padding: 1rem;
+    width: 400px;
+    height: 200px;
+}
+
+#camera {
+    position: relative;
+}
+
+#camera h1 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#square {
+    border: solid black;
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    height: 200px;
+}
+
+.small-square, .small-square-red {
+    width: 4rem;
+    height: 4rem;
+    border: solid black;
+    background-color: green;
+    text-align: center;
+    flex: 1;
+}
+
+.small-square-red {
+    background-color: red;
+}
+
+#line-chart-rectangle, #table-square {
+    display: flex;
+    border: solid black;
+    margin: 1rem;
+    padding: 1rem;
+    flex: 1;
+    height: 500px;
+}
+
+#curve_chart {
+    width: auto;
+    height: 500px;
+}
+
+.data-sheet {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.data-sheet-header {
+    background-color: dodgerblue;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
